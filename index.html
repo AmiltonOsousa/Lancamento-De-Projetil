@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Lançamento de Projétil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulação de Lançamento de Projétil</h1>
+    <form id="simulationForm">
+        <label>Ângulo (°): <input type="number" id="angulo" value="40" /></label><br>
+        <label>Velocidade Inicial (m/s): <input type="number" id="v0" value="18" /></label><br>
+        <label>Massa (kg): <input type="number" id="massa" value="3" /></label><br>
+        <label>Diâmetro (m): <input type="number" id="diametro" value="1" /></label><br>
+        <label>Coeficiente de Arrasto: <input type="number" id="coefArrastro" value="0.4" step="0.01" /></label><br>
+        <button type="button" onclick="simulate()">Simular</button>
+    </form>
+    <canvas id="canvas" width="800" height="400"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
